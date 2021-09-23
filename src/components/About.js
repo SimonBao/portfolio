@@ -37,17 +37,17 @@ const About = () => {
         </div>
         <div
           id="about__card"
-          className="col-7 d-flex align-items-center about__card"
+          className="col-sm-12 col-md-7 col-lg-7 d-flex align-items-center about__card"
         >
           <div id="introduction__container" className="col-12 d-flex flex-row">
-            <div id="introduction" className="col-5 introduction">
+            <div id="introduction" className="col-5 col-sm-10 col-md-5 introduction">
               <span>
                 ffdsdha, skjdfh kajsdhf kjsahd f j ksahdfjk sadhfkl asjh f
                 klsjad hfkas jdh flksj dha fsha dsdha, skjdfh kajsdhf kjsahd f j
                 ksahdfjk sadhfkl asjh f klsjad hfkas jdh flksj dha fsha
               </span>
             </div>
-            <div id="progress_bar__container" className="col-7">
+            <div id="progress_bar__container" className="col-md-7">
               <ProgressBar now="70" visuallyHidden />
             </div>
           </div>

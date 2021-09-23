@@ -22,7 +22,6 @@
   @include media(">phone", "<=tablet") {
     display: grid;
     // grid-template-rows: 1fr 1fr;
-    background-color: blue;
     .about_header_container, h1, img {
       display: none;
     }
