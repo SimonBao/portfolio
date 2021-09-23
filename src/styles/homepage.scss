@@ -1,10 +1,12 @@
-.homepage_avatar {
-  height: 30%;
-}
+@import "include-media";
 
 .homepage {
   background-image: url(../images/Polygon.svg);
   position: relative;
+
+  .homepage_avatar {
+    height: 30%;
+  }
 
   h1 {
     font-weight: bold;
@@ -14,6 +16,15 @@
   .typed-text {
     color: white;
     font-size: 20px;
+  }
+
+  @include media(">phone", "<=tablet") {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .homepage_avatar {
+      width: 50%;
+    }
   }
 }
 
