@@ -1,0 +1,23 @@
+.homepage_avatar {
+  height: 30%;
+}
+
+.homepage {
+  background-image: url(../images/Polygon.svg);
+  position: relative;
+
+  h1 {
+    font-weight: bold;
+    color: white;
+  }
+
+  .typed-text {
+    color: white;
+    font-size: 20px;
+  }
+}
+
+.layer {
+  position: relative;
+  transition-delay: 0.01s;
+}
