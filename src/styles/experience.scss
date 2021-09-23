@@ -1,0 +1,19 @@
+@import "include-media";
+
+.vertical-timeline.vertical-timeline--animate.vertical-timeline--two-columns::before {
+  background-color: black;
+}
+
+#experience {
+  .verticalTimelime {
+    display: none;
+  }
+  @include media(">phone", "<=desktop") {
+  .verticalTimelime {
+    display: block;
+  }
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+  }
+}
