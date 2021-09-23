@@ -15,14 +15,20 @@
   }
 
   .about__card {
-    background-color: red;
     border-radius: 50px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   }
 
   @include media(">phone", "<=tablet") {
     display: grid;
     // grid-template-rows: 1fr 1fr;
-    .about_header_container, h1, img {
+    .about__card {
+      border-radius: 0;
+      box-shadow: none;
+    }
+    .about_header_container,
+    h1,
+    img {
       display: none;
     }
   }
