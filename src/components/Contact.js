@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import RubyLogo from "../images/logos/Ruby_logo.svg";
 
 const Contact = () => {

@@ -1,4 +1,4 @@
-import { FaBook, FaEnvelope, FaHome, FaUser } from "react-icons/fa";
+import { FaBook, FaHome, FaUser } from "react-icons/fa";
 import "../styles/navbar.scss";
 import avatar from "../images/avatar.png";
 import { useMediaQuery } from "react-responsive";

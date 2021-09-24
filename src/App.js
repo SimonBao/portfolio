@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
 import Experience from "./components/Experience";
-import Contact from "./components/Contact";
+// import Contact from "./components/Contact";
 import "./styles/pages.scss";
 import {useMediaQuery} from "react-responsive";
 
