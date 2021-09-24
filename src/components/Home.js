@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 import Typed from "react-typed";
 import avatar from "../images/avatar.png";
 import "../styles/homepage.scss";
@@ -43,6 +43,14 @@ const Introduction = () => {
             target="_blank"
           >
             <FaGithub size={35} />
+          </a>
+          <a
+            href="mailto:simonbao.sb@gmail.com"
+            className="icon"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <FaEnvelope size={35} />
           </a>
         </div>
       </div>

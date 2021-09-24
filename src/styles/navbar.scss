@@ -3,6 +3,43 @@
   border-right: 2px solid #3e3c63;
   .icon {
     margin-bottom: 15px;
-    margin-left: 25px;
+    margin-left: 10px;
+  }
+
+  .navigation {
+    justify-content: center;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  a,
+  span {
+    color: #ebc073;
+  }
+
+  a:hover {
+    color: white;
+    span {
+
+    color: inherit;
+    }
+  }
+
+  span {
+    margin-left: 5px;
+  }
+
+  .small_screen {
+    a {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    span {
+      display: none;
+    }
   }
 }

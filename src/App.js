@@ -6,16 +6,20 @@ import About from "./components/About";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import "./styles/pages.scss";
+import {useMediaQuery} from "react-responsive";
 
 function App() {
+  const isLaptop = useMediaQuery({ query: "(max-width: 1365px)" });
   return (
     <div className="d-flex flex-row" id="main-container">
       <Navbar />
-      <div className="content col-10">
+      <div className={ `content ${isLaptop ?   "col-10" : "col-11"}` }>
         <Home />
         <About />
         <Experience />
-        <Contact />
+    {
+      // <Contact />
+    }
       </div>
     </div>
   );

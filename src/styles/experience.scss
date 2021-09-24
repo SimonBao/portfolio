@@ -5,15 +5,15 @@
 }
 
 #experience {
-  .verticalTimelime {
-    display: none;
-  }
+height: fit-content;
+  // .verticalTimelime {
+    // display: none;
+  // }
   @include media(">phone", "<=desktop") {
   .verticalTimelime {
-    display: block;
+    // display: block;
   }
     display: flex;
     justify-content: center;
-    height: fit-content;
   }
 }

@@ -3,7 +3,7 @@ import $ from "jquery";
 import "../styles/about.scss";
 import avatar from "../images/avatar-about.png";
 import { ProgressBar } from "react-bootstrap";
-import { aboutResize } from '../helpers/index'
+import { aboutResize } from "../helpers/index";
 
 const About = () => {
   aboutResize();
@@ -47,9 +47,10 @@ const About = () => {
               className="col-5 col-sm-10 col-md-5 introduction"
             >
               <span>
-                ffdsdha, skjdfh kajsdhf kjsahd f j ksahdfjk sadhfkl asjh f
-                klsjad hfkas jdh flksj dha fsha dsdha, skjdfh kajsdhf kjsahd f j
-                ksahdfjk sadhfkl asjh f klsjad hfkas jdh flksj dha fsha
+                I'm a London based Software Engineer/Web Developer who
+                occasionally design things. I love coding and finding things
+                that make it even more fun, which recently lead me to become
+                addicted to Vim!
               </span>
             </div>
             <div
@@ -59,11 +60,11 @@ const About = () => {
               <span>HTML</span>
               <ProgressBar now="75" visuallyHidden variant="info" />
               <span>CSS</span>
-              <ProgressBar now="85" visuallyHidden variant="success"/>
-              <span>Javascript</span>
+              <ProgressBar now="85" visuallyHidden variant="success" />
+              <span>Javascript - React/React Native</span>
               <ProgressBar now="90" visuallyHidden variant="warning" />
-              <span>Ruby/RoR</span>
-              <ProgressBar now="85" visuallyHidden variant="danger"/>
+              <span>Ruby - Ruby on Rails</span>
+              <ProgressBar now="85" visuallyHidden variant="danger" />
               <span>SQL</span>
               <ProgressBar now="70" visuallyHidden />
             </div>

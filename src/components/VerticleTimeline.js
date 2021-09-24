@@ -32,15 +32,6 @@ import SchoolIcon from "@material-ui/icons/School";
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2019 - 2019"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          icon={<WorkIcon />}
-        >
-          <h5 className="vertical-timeline-element-title">English Teacher</h5>
-          <h6 className="vertical-timeline-element-subtitle">Omedia</h6>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
           date="2018 - 2019"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<WorkIcon />}
