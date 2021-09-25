@@ -3,23 +3,31 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import UAParser from "ua-parser-js";
 import {
-  RubyLogo,
-  JavascriptLogo,
-  NodeJsLogo,
   AngularLogo,
-  GraphQLogo,
   CSSLogo,
+  GraphQLogo,
   HTML5Logo,
+  JavascriptLogo,
+  JestLogo,
+  JQueryLogo,
+  NodeJsLogo,
+  ReactLogo,
+  RubyLogo,
+  RubyOnRailsLogo,
 } from "../images/logos";
 
 export const LogoImages = () => [
-  <img src={RubyLogo} alt="" />,
-  <img src={JavascriptLogo} alt="" />,
-  <img src={NodeJsLogo} alt="" />,
   <img src={AngularLogo} alt="" />,
-  <img src={GraphQLogo} alt="" />,
   <img src={CSSLogo} alt="" />,
+  <img src={GraphQLogo} alt="" />,
   <img src={HTML5Logo} alt="" />,
+  <img src={JavascriptLogo} alt="" />,
+  <img src={JestLogo} alt="" />,
+  <img src={JQueryLogo} alt="" />,
+  <img src={NodeJsLogo} alt="" />,
+  <img src={ReactLogo} alt="" />,
+  <img src={RubyLogo} alt="" />,
+  <img src={RubyOnRailsLogo} alt="" />,
 ];
 
 const LogoCarousel = () => {
@@ -64,7 +72,7 @@ const LogoCarousel = () => {
       dotListClass="custom-dot-list-style"
       itemClass="carousel-item-padding-40-px"
     >
-    {LogoImages()}
+      {LogoImages()}
     </Carousel>
   );
 };
