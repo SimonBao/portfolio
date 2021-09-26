@@ -10,7 +10,7 @@ const Introduction = () => {
   return (
     <div className="page homepage" id="home">
       <div
-        className="d-flex flex-column justify-content-center align-items-center layer"
+        className="layer"
         data-speed="5"
       >
         <img src={avatar} className="homepage_avatar" alt="avatar" />

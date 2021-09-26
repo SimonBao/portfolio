@@ -3,9 +3,19 @@
 .homepage {
   background-image: url(../images/Polygon.svg);
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  .homepage_avatar {
-    height: 30%;
+  .layer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .homepage_avatar {
+      height: 30%;
+    }
   }
 
   h1 {
@@ -30,4 +40,8 @@
 
 .layer {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
