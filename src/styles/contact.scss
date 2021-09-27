@@ -3,7 +3,7 @@
 .contact {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas:
     "header"
     "form"
@@ -68,7 +68,7 @@
 
     input,
     button {
-      height: 20%;
+      height: 10%;
     }
 
     input,

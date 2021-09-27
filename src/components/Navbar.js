@@ -24,6 +24,10 @@ const Navbar = () => {
           <FaUser />
           <span>About</span>
         </a>
+        <a href="#portfolio" className="icon">
+          <FaUser />
+          <span>Portfolio</span>
+        </a>
         <a href="#experience" className="icon">
           <FaBook />
           <span>Experience</span>

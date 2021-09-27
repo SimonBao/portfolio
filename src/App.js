@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
 import Experience from "./components/Experience";
+import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import "./styles/pages.scss";
 import { useMediaQuery } from "react-responsive";
@@ -16,6 +17,7 @@ function App() {
       <div className={`content ${isLaptop ? "col-10" : "col-11"}`}>
         <Home />
         <About />
+        <Portfolio />
         <Experience />
         <Contact />
       </div>
