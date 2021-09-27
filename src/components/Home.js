@@ -9,10 +9,7 @@ const Introduction = () => {
   parralax();
   return (
     <div className="page homepage" id="home">
-      <div
-        className="layer"
-        data-speed="5"
-      >
+      <div className="layer" data-speed="5">
         <img src={avatar} className="homepage_avatar" alt="avatar" />
         <h1>Simon Bao</h1>
         <Typed

@@ -1,4 +1,6 @@
 .sidebar_left {
+  height: 100vh;
+
   background-color: #353353;
   border-right: 2px solid #3e3c63;
   .icon {
@@ -22,8 +24,7 @@
   a:hover {
     color: white;
     span {
-
-    color: inherit;
+      color: inherit;
     }
   }
 
