@@ -1,62 +1,139 @@
 @import "include-media";
 
 #about {
-  h1 {
-    padding: 50px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas:
+    "header"
+    "avatar_container"
+    "details_container"
+    "details_container"
+    "details_container"
+    "logos_container";
+  .header {
+    grid-area: header;
+    padding-top: 5%;
+    padding-left: 5%;
   }
 
-  span {
-  }
-
-  .introduction {
-    padding-left: 25px;
-  }
-
-  .about__card {
-    border-radius: 50px;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  }
-  .react-multi-carousel-track {
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-  }
-
-  .logos_container {
+  .about_avatar__container {
+    grid-area: avatar_container;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 50px;
-
-    img {
-      width: 100px;
-      height: 100px;
-      opacity: 0.2;
-      color: grey;
-    }
-
-    .logos__static {
-      img {
-        margin: 0 15px;
-      }
+    justify-content: center;
+    .about_avatar__image {
+      width: 35%;
     }
   }
 
-  @include media(">phone", "<=tablet") {
-    // display: grid;
-    // grid-template-rows: 1fr 1fr;
-    .about__card {
-      border-radius: 0;
-      box-shadow: none;
+  .about_details__container {
+    grid-area: details_container;
+    .about_details__card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .about_me_container {
+        width: 90%;
+        margin-bottom: 10%;
+      }
+      #progress_bar__container {
+        width: 90%;
+      }
+    }
+  }
+}
+
+@include media(">desktop") {
+  #about {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+    grid-template-areas:
+      "header details_container details_container details_container"
+      "avatar_container details_container details_container details_container"
+      "avatar_container details_container details_container details_container"
+      "logos_container logos_container logos_container logos_container";
+
+    .about_avatar__container {
+      grid-area: avatar_container;
+      display: flex;
+      justify-content: center;
+      .about_avatar__image {
+        width: 90%;
+        height: 80%;
+      }
     }
 
-    .logos_container {
-      .logos__static {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        height: 100px;
-        overflow-y: scroll;
+    .about_details__container {
+      grid-area: details_container;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 2%;
+      .about_details__card {
+        display: flex;
+        height: 60vh;
+        width: 90%;
+        border-radius: 50px;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        flex-direction: row;
+        .about_me_container {
+          width: 40%;
+          margin-left: 2%;
+        }
+
+        #progress_bar__container {
+          width: 55%;
+          margin-left: 3%;
+        }
       }
+    }
+  }
+}
+@include media(">2400px") {
+  #about {
+    .about_avatar__container {
+      .about_avatar__image {
+        width: 75%;
+      }
+    }
+  }
+}
+
+.react-multi-carousel-track {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.logos_container {
+  grid-area: logos_container;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  img {
+    width: 100px;
+    height: 100px;
+    opacity: 0.2;
+    color: grey;
+  }
+
+  .logos__static {
+    img {
+      margin: 0 15px;
+    }
+  }
+}
+
+@include media(">phone", "<=tablet") {
+  .logos_container {
+    .logos__static {
+      display: inline-grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr; 
+      grid-template-rows: 1fr;
+      height: 100px;
+      overflow: scroll;
     }
   }
 }

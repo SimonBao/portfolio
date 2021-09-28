@@ -1,3 +1,5 @@
+@import "include-media";
+
 .sidebar_left {
   height: 100vh;
 
@@ -32,7 +34,7 @@
     margin-left: 5px;
   }
 
-  .small_screen {
+  .navigation {
     a {
       margin-top: 20px;
       margin-bottom: 20px;
@@ -41,6 +43,30 @@
 
     span {
       display: none;
+    }
+  }
+}
+
+@include media(">1180px") {
+  .sidebar_left {
+    .navigation {
+      a {
+        text-align: initial;
+      }
+
+      span {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+@include media(">1900px") {
+  .sidebar_left {
+    .navigation {
+      a {
+        text-align: center;
+      }
     }
   }
 }

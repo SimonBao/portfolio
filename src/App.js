@@ -10,12 +10,11 @@ import "./styles/pages.scss";
 import { useMediaQuery } from "react-responsive";
 
 function App() {
-  const isLaptop = useMediaQuery({ query: "(max-width: 1365px)" });
   const isMobile = useMediaQuery({ query: "(max-width: 429px)" });
   return (
     <div className="d-flex flex-row" id="main-container">
       {!isMobile && <Navbar />}
-      <div className={`content ${isLaptop ? "col-10" : "col-11"}`}>
+      <div className="content col-11">
         <Home />
         <About />
         <Portfolio />
