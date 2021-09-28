@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import PortfolioModal from "./PortfolioModal";
-import '../styles/portfolio.scss';
-import tgrHomepage from '../images/projects/enterthegreenroom/homepage.png';
+import "../styles/portfolio.scss";
+import tgrHomepage from "../images/projects/enterthegreenroom/homepage.png";
 
 const Portfolio = () => {
   return (

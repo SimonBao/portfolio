@@ -11,9 +11,10 @@ import { useMediaQuery } from "react-responsive";
 
 function App() {
   const isLaptop = useMediaQuery({ query: "(max-width: 1365px)" });
+  const isMobile = useMediaQuery({ query: "(max-width: 429px)" });
   return (
     <div className="d-flex flex-row" id="main-container">
-      <Navbar />
+      {!isMobile && <Navbar />}
       <div className={`content ${isLaptop ? "col-10" : "col-11"}`}>
         <Home />
         <About />
@@ -21,6 +22,7 @@ function App() {
         <Experience />
         <Contact />
       </div>
+      {isMobile && <Navbar />}
     </div>
   );
 }
