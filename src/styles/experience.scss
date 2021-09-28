@@ -5,14 +5,8 @@
 }
 
 #experience {
-height: fit-content;
-  // .verticalTimelime {
-    // display: none;
-  // }
+  height: fit-content;
   @include media(">phone", "<=desktop") {
-  .verticalTimelime {
-    // display: block;
-  }
     display: flex;
     justify-content: center;
   }
